@@ -1,0 +1,41 @@
+package mytest;
+
+import java.util.Scanner;
+
+public class mytest {
+
+	public static void main(String[] args) {
+				Scanner scan = new Scanner (System.in);
+				double contador = 0;
+				System.out.println("Qual seu nome?");
+				String nome = scan.nextLine();
+				System.out.println("Pergunta 1\nQuantas patas tem um cachorro?\na)3 b)4 c)7");
+				String pergunta1 = scan.nextLine();
+				System.out.println("Pergunta 2\nOnde fica localizado o nariz?\na)No rosto b)Na barriga c)No joelho");
+				String pergunta2 = scan.nextLine();
+				System.out.println("Pergunta 3\nQuantas patas tem um gato?\na)3 b)7 c)4");
+				String pergunta3 = scan.nextLine();
+				System.out.println("Pergunta 4\nOnde fica Portugal?\na)Na Europa b)Na America c)Na Ásia");
+				String pergunta4 = scan.nextLine();
+				if(pergunta1.equals("b")) {
+					contador = contador+2.5;
+				}
+				if(pergunta2.equals("a")) {
+					contador = contador+2.5;
+				}
+				if(pergunta3.equals("c")) {
+					contador = contador+2.5;
+				}
+				if(pergunta4.equals("a")) {
+					contador = contador+2.5;
+				}
+				if (contador>=6) {
+				System.out.println(nome + " Parabéns você passou, sua nota foi: " + contador);
+				}else {
+				System.out.println(nome + " Você não passou, sua nota foi: " + contador);
+				}
+			}
+
+		
+
+	}
